@@ -1,0 +1,12 @@
+python train_refineDet.py --gpus 0,1 -j 32 \
+                          --batch-size 32 \
+                          --network vgg16_atrous \
+                          --data-shape 320 \
+                          --dataset voc \
+                          --lr 0.001 \
+                          --lr-decay-epoch 160,200 \
+                          --lr-decay 0.1 \
+                          --warmup-epochs 2 \
+                          --val-interval 10 \
+                          --save-interva 10 \
+                          --epochs 250

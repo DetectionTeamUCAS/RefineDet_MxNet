@@ -27,7 +27,7 @@ We will try our best to fix it in the future.**
 1、train
 ```  
 cd $PATH_ROOT/scripts/detection/refineDet
-python train_scipt.py
+./train_scipt.sh
 ```
 
 
